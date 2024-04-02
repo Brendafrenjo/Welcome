@@ -17,6 +17,8 @@ echo "<br />";
 echo "Date is: ".date("d/m/Y <br />");
 echo("Hello World <br /> <br />");
 
+echo "<h2>Working with Variables</h2>";
+
 $characterName = "Tom";
 $characterAge = 35;
 echo("There once was a man name $characterName <br />");
@@ -24,14 +26,82 @@ echo("He was $characterAge years old <br />");
 $characterName = "Mike";
 $characterAge = 40;
 echo("He really liked the name $characterName <br />");
-echo("But didn't like being $characterAge <br /> <br />");
+echo("But didn't like being $characterAge");
+
+echo "<h2>Data Types</h2>";
 
 $phrase = "To be or not to be";
 $age = 30;
 $gpa = 3.7;
 $isMale = true;
 null;
-echo "$phrase <br />";
+echo $age;
+echo $gpa;
+echo "$phrase <br /> <br />";
+
+echo "<h2>Working with Strings</h2>";
+
+echo "Giraffe Academy <br />";
+$phrase = "Giraffe Academy";
+
+echo strtolower($phrase);
+echo "<br />";
+echo strtoupper($phrase);
+echo "<br />";
+echo strtoupper(("dog" . " and cat"));
+echo "<br />";
+echo strlen($phrase);
+echo "<br />";
+echo $phrase[5];
+echo "<br />";
+echo "Brenda"[3];
+echo "<br />";
+$phrase[0] = "B";
+echo $phrase;
+echo "<br />";
+echo str_replace("Brenda", "Giraffe", "Brenda is a frontend developer"); 
+echo "<br />";
+echo str_replace("Frontend development", "Backend development", "Frontend development is incredible"); 
+echo "<br />";
+echo str_replace("Biraffe", "Panda", $phrase);
+echo "<br />";
+echo substr($phrase, 8, 5);
+
+echo "<h2>Working with Numbers</h2>";
+
+echo 55;
+echo "<br />";
+echo -55.67;
+echo "<br />";
+echo 5 + 9;
+echo "<br />";
+echo 5 - 9;
+echo "<br />";
+echo 5 * 9;
+echo "<br />";
+echo 5 / 9;
+echo "<br />";
+
+echo 5 % 9;
+echo "<br />";
+echo 10 % 3;
+echo "<br />";
+echo 4 + 5 * 10;
+echo "<br />";
+$num = 10;
+echo $num;
+echo "<br />";
+$num++;
+echo $num;
+echo "<br />";
+$num--;
+echo $num;
+echo "<br />";
+$num = $num + 25;
+echo $num;
+echo "<br />";
+$num += 35;
+echo $num;
 ?>
 </body>
 </html>
