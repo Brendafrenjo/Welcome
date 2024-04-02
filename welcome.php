@@ -102,6 +102,43 @@ echo $num;
 echo "<br />";
 $num += 35;
 echo $num;
+echo "<br />";
+$num -= 6;
+echo $num;
+echo "<br />";
+$num *= 2;
+echo $num;
+echo "<br />";
+$num /= 2;
+echo $num;
+
+echo "<h2>Functions for Complex Math Operations</h2>";
+
+echo abs(-100);
+echo "<br />";
+echo pow(2, 6);
+echo "<br />";
+echo sqrt(144);
+echo "<br />";
+echo max(12, 78);
+echo "<br />";
+echo min(4, 7);
+echo "<br />";
+echo round(3.5);
+echo "<br />";
+echo ceil(3.3);
+echo "<br />";
+echo floor(3.9);
+echo "<br />";
+echo round(3.5);
+echo "<br />";
+echo ceil(3.3);
+echo "<br />";
+echo floor(3.9);
+
+echo "<h2>Getting User Input</h2>";
+
+echo "<form action='welcome.php' method='get'>";    
 ?>
 </body>
 </html>
