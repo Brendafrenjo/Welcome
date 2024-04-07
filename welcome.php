@@ -137,8 +137,18 @@ echo "<br />";
 echo floor(3.9);
 
 echo "<h2>Getting User Input</h2>";
-
-echo "<form action='welcome.php' method='get'>";    
 ?>
+<br />
+<form action="welcome.php" method="get">
+  Username: <input type="text" name="username" placeholder="Enter your name..." />
+  <br />
+  Age: <input type="number" name="age" />
+  <br />
+  <input type="submit" value="Submit" />
+</form>
+<br />
+You username is <?php echo $_GET["username"] ?>
+ and
+your age is: <?php echo $_GET["age"] ?>
 </body>
 </html>
