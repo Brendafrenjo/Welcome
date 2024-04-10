@@ -19,8 +19,6 @@
     $author =  "Brenda Frenjo";
     $wordCount = 400;
     include "article-header.php";
-    
-    
     ?>
     
     <?php 
