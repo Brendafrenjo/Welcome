@@ -10,32 +10,35 @@
     <h1>Object Functions</h1>
     <?php
     class Book{
-        var $author;
-        var $title;
-        var $pages;
+        public $title;
+        private $rating;
 
-        function __construct($aAuthor, $aTitle, $aPages)
+        function __construct($title, $rating)
         {
-            $this->author = $aAuthor; 
-            $this->title = $aTitle; 
-            $this->pages = $aPages; 
+            $this->title = $title;
+            $this->getRating($rating);
         }
 
-        function bookAuthor() {
-            if ($this->author == "Ruth Ozeki") {
-                return "Author is Ruth Ozeki";
-    } 
-    return "Author is JK Rowling";
+        function getRating(){
+           return $this->rating; 
+        }
+
+        function setRating($rating){
+            if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+               $this->rating = $rating;
+            } else {
+                $this->rating = "NR";
+            }
+        }
+
     }
-}
 
-    $book1 = new Book("The Book of Form and Emptiness", "Ruth Ozeki", 544);
-    $book2 = new Book ("Harry Potter", "JK Rowling", 400);  
+    $antMan = new Book("The AntMan and the Wasp", "dOG");
+   //G, PG, PG-13, R, NR
 
-    echo $book2->bookAuthor();
-    echo "<br>";
-    echo $book1->title;
-    echo "<br>";
-    ?>
+   echo $antMan->title;
+   echo "<br />";
+   echo $antMan->getRating();
+        ?>
 </body>
 </html>
